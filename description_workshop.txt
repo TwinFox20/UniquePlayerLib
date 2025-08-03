@@ -1,0 +1,75 @@
+﻿[h1]EN:[/h1]
+
+[b]UniquePlayerLib[/b] is a helper library mod for tModLoader that assigns each player a unique, persistent [i]GUID[/i] (Globally Unique Identifier), synced between client and server. It allows mod developers to reliably identify players across sessions, regardless of their [i]whoAmI[/i] value.
+
+[h2]✨ Features[/h2]
+[list]
+  [*]Assigns a unique [i]GUID[/i] to each player
+  [*]Automatically saves/loads the [i]GUID[/i] on the client
+  [*]Syncs the [i]GUID[/i] with the server when the player joins
+  [*]Prevents clients from faking [i]GUID[/i]s
+  [*]Removes the [i]GUID[/i] when a player leaves
+  [*]Easy-to-use [i]API[/i] for getting and checking [i]GUID[/i]s
+[/list]
+
+[h2]📦 Installation[/h2]
+
+[h3]From Mod Browser[/h3]
+[olist]
+  [*]Open the Mod Browser in tModLoader
+  [*]Search for [b]UniquePlayerLib[/b]
+  [*]Install the mod
+[/olist]
+
+[h3]As a dependency[/h3]
+Add to your [i]build.txt[/i]:
+ModReferences = UniquePlayerLib
+
+[h2]🧠 Why use this?[/h2]
+In Terraria, the player's [i]whoAmI[/i] can change between sessions. If your mod needs to store persistent data tied to a player — such as chest access, quests, zones, housing, or any other per-player logic — you need a reliable identifier. And [b]UniquePlayerLib[/b] gives you that.
+
+[h2]📁 Structure[/h2]
+[list]
+  [*][b]UniqueSystem[/b] — server-side static [i]API[/i]
+  [*][b]UniquePlayer[/b] — handles save, load and create [i]GUID[/i]
+  [*][b]PlayerIDLib[/b] — [i]IL[/i] code patching & packet handling
+[/list]
+
+[hr][/hr]
+
+[h1]RU:[/h1]
+
+[b]UniquePlayerLib[/b] — это вспомогательный мод-библиотека для tModLoader, которая позволяет каждому игроку иметь постоянный уникальный [i]GUID[/i], синхронизируемый между клиентом и сервером. Она предназначена для модов, которым нужно сохранять и привязывать данные к конкретным игрокам — независимо от их сетевого идентификатора ([i]whoAmI[/i]).
+
+[h2]✨ Возможности[/h2]
+[list]
+  [*]Назначает каждому игроку уникальный [i]GUID[/i]
+  [*]Сохраняет и загружает [i]GUID[/i]
+  [*]Синхронизирует [i]GUID[/i] с сервером при входе
+  [*]Обеспечивает защиту от подделки [i]GUID[/i] со стороны клиента
+  [*]Удаляет [i]GUID[/i], когда игрок выходит с сервера
+  [*]Простой [i]API[/i] для получения и проверки [i]GUID[/i]
+[/list]
+
+[h2]📦 Установка[/h2]
+
+[h3]Через tModLoader[/h3]
+[olist]
+  [*]Откройте браузер модов в игре
+  [*]Найдите [b]UniquePlayerLib[/b]
+  [*]Установите мод
+[/olist]
+
+[h3]Для использования в других модах[/h3]
+В [i]build.txt[/i] добавьте:
+ModReferences = UniquePlayerLib
+
+[h2]🧠 Зачем это нужно?[/h2]
+В Terraria значение [i]whoAmI[/i] может меняться от сессии к сессии. Если моду нужно хранить персональные данные игрока (доступ к сундукам, квесты, зоны и т.д.), важно использовать постоянный идентификатор. [b]UniquePlayerLib[/b] решает эту задачу, предоставляя безопасный и стабильный способ идентификации игроков.
+
+[h2]📁 Структура[/h2]
+[list]
+  [*][b]UniqueSystem[/b] — статичный [i]API[/i] на стороне сервера
+  [*][b]UniquePlayer[/b] — обеспечивает сохранение, загрузку и создаине [i]GUID[/i]
+  [*][b]PlayerIDLib[/b] — изменение [i]IL[/i] кода и обработка пакетов
+[/list]

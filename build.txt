@@ -1,0 +1,3 @@
+displayName = UniquePlayerLib
+author = TwinFox20
+version = 1.0.0
