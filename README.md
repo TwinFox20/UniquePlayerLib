@@ -6,9 +6,9 @@
 - Assigns a unique `GUID` to each player
 - Automatically saves/loads the `GUID` on the client
 - Syncs the `GUID` with the server when the player joins
-- Prevents clients from faking `GUID`s
+- Prevents clients from faking `GUIDs`
 - Removes the `GUID` when a player leaves
-- Easy-to-use `API` for getting and checking `GUID`s
+- Easy-to-use `API` for getting and checking `GUIDs`
 
 ## 📦 Installation
 
