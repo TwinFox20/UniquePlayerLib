@@ -1,7 +1,3 @@
-﻿# UniquePlayerLib 🔗
-
----
-
 # EN:
 
 **UniquePlayerLib** is a helper library mod for [tModLoader](https://github.com/tModLoader/tModLoader) that assigns each player a unique, persistent `GUID` (Globally Unique Identifier), synced between client and server. It allows mod developers to reliably identify players across sessions, regardless of their `whoAmI` value.
@@ -10,9 +6,9 @@
 - Assigns a unique `GUID` to each player
 - Automatically saves/loads the `GUID` on the client
 - Syncs the `GUID` with the server when the player joins
-- Prevents clients from faking `GUID`s
+- Prevents clients from faking `GUIDs`
 - Removes the `GUID` when a player leaves
-- Easy-to-use `API` for getting and checking `GUID`s
+- Easy-to-use `API` for getting and checking `GUIDs`
 
 ## 📦 Installation
 
